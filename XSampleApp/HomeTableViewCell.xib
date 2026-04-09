@@ -197,6 +197,11 @@
                     <constraint firstItem="XoL-m5-lM9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="60" id="xaY-Hx-Oyk"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="bodyLabel" destination="n5Z-km-XXZ" id="whm-KT-NJl"/>
+                <outlet property="userImageView" destination="lca-Vo-hZ2" id="3kI-MD-mrJ"/>
+                <outlet property="userNameLabel" destination="qk3-pa-i8y" id="ucB-zc-omY"/>
+            </connections>
             <point key="canvasLocation" x="18" y="246"/>
         </tableViewCell>
     </objects>
