@@ -11,11 +11,11 @@ import UIKit
 final class HomeTableViewCell: UITableViewCell {
 
     /// ユーザーアイコンのImageView
-    @IBOutlet weak var userImageView: UIImageView!
+    private @IBOutlet weak var userImageView: UIImageView!
     /// ユーザー名のLabel
-    @IBOutlet weak var userNameLabel: UILabel!
+    private @IBOutlet weak var userNameLabel: UILabel!
     /// ポスト本文のLabel
-    @IBOutlet weak var bodyLabel: UILabel!
+    private @IBOutlet weak var bodyLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
