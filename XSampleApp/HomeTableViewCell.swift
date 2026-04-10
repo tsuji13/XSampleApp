@@ -12,10 +12,8 @@ class HomeTableViewCell: UITableViewCell {
 
     /// ユーザーアイコンのImageView
     @IBOutlet weak var userImageView: UIImageView!
-    
     /// ユーザー名のLabel
-    @IBOutlet weak var userNameLabel: UILabel!
-    
+    @IBOutlet weak var userNameLabel: UILabel!    
     /// ポスト本文のLabel
     @IBOutlet weak var bodyLabel: UILabel!
     
