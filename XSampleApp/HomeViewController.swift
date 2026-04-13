@@ -9,6 +9,7 @@ import UIKit
 
 final class HomeViewController: UIViewController {
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,10 +32,18 @@ final class HomeViewController: UIViewController {
         self.navigationItem.titleView = titleView
         
         
-        let image = UIImage(named: "")
-       // let circularImage = image?.makeCircularImage(image: image, size: CGSize(width: 32, height: 32))
+        if let image = UIImage(named: "ic_user_icon"){
+            let circularImage = image.makeCircularImage(image: image, size: CGSize(width: 32, height: 32))
+            let leftBarButtonItem = UIBarButtonItem(image: circularImage?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(didTapLeftBarButon))
+            self.navigationItem.leftBarButtonItem = leftBarButtonItem
+        }
     }
 
+    /// 左のバーボタンアイテムをタップした時の挙動
+    @objc func didTapLeftBarButon() {
+        
+        
+    }
     /*
     // MARK: - Navigation
 
