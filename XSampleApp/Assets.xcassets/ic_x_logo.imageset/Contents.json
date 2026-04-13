@@ -1,9 +1,7 @@
 {
   "images" : [
     {
- HEAD:XSampleApp/Assets.xcassets/ic_three_point_mark.imageset/Contents.json
-      "filename" : "three_point_mark.png",
- 3点リーダーアイコンとXロゴアイコンの追加):XSampleApp/Assets.xcassets/three_point_mark.imageset/Contents.json
+      "filename" : "Xロゴ.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
