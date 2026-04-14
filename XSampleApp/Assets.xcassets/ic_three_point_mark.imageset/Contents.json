@@ -1,9 +1,11 @@
 {
   "images" : [
     {
+<<<<<<< HEAD:XSampleApp/Assets.xcassets/ic_three_point_mark.imageset/Contents.json
  HEAD:XSampleApp/Assets.xcassets/ic_three_point_mark.imageset/Contents.json
       "filename" : "three_point_mark.png",
  3点リーダーアイコンとXロゴアイコンの追加):XSampleApp/Assets.xcassets/three_point_mark.imageset/Contents.json
+ 削除・追加した3点リーダーアイコンのコミット):XSampleApp/Assets.xcassets/three_point_mark.imageset/Contents.json
       "idiom" : "universal",
       "scale" : "1x"
     },
