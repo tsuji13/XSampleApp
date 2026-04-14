@@ -15,7 +15,7 @@ final class HomeTableViewCell: UITableViewCell {
     /// ユーザー名のLabel
     @IBOutlet private weak var userNameLabel: UILabel!
     /// ポスト本文のLabel
-     @IBOutlet private weak var bodyLabel: UILabel!
+    @IBOutlet private weak var bodyLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
