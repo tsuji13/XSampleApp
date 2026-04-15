@@ -8,16 +8,29 @@
 import UIKit
 
 /// Home画面
-class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController {
+    
+    // MARK: - Properties
+    
+    // MARK: - IBOutlets
 
+    /// タイムライン表示するテーブルを配置
+    @IBOutlet private weak var tableView: UITableView!
+    
+    // MARK: - View Life-Cycle Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         configureNavigationBar()
-        
-        // Do any additional setup after loading the view.
-    }
 
+    }
+    
+    // MARK: - IBActions
+
+    /// ポストボタンをタップ
+    @IBAction func postButtonTapped(_ sender: Any) {
+    }
     
     // MARK: - Other Methods
     
@@ -46,14 +59,4 @@ class HomeViewController: UIViewController {
         
         
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

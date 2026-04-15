@@ -9,13 +9,13 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell {
 
-    //ユーザーアイコンのImageView
+    /// ユーザーアイコンのImageView
     @IBOutlet weak var userImageView: UIImageView!
     
-    //ユーザー名のLabel
+    /// ユーザー名のLabel
     @IBOutlet weak var userNameLabel: UILabel!
     
-    //ポスト本文のLabel
+    /// ポスト本文のLabel
     @IBOutlet weak var bodyLabel: UILabel!
     
     override func awakeFromNib() {
