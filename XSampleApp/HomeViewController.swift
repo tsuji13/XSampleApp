@@ -35,7 +35,7 @@ final class HomeViewController: UIViewController {
     
     // MARK: - Other Methods
     
-    ///NavigationBarの設定
+    /// NavigationBarの設定
     private func configureNavigationBar() {
         
         let imageView = UIImageView(image: UIImage(named: "ic_x_logo"))
