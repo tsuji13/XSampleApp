@@ -13,7 +13,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-  
+        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
+        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
+        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        guard let scene = (scene as? UIWindowScene) else { return }
+        self.window = UIWindow(windowScene: scene)
+        
+        //
+        let navigationController = UINavigationController(rootViewController: HomeViewController())
+        
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+        
+        
         let tabBarController = UITabBarController()
         
         let homeVC = HomeViewController()
@@ -34,12 +46,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         notificationNav.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "ic_notification_icon"), tag: 0)
         messageNav.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "ic_message_icon"), tag: 0)
         
+        
         tabBarController.viewControllers = [homeNav, searchNav, communityNav, notificationNav, messageNav]
         
         tabBarController.tabBar.backgroundColor = UIColor(hex: "#F2F2F2")
         
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
+        
+        
+        
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
