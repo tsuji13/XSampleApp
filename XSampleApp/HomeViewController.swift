@@ -14,7 +14,6 @@ final class HomeViewController: UIViewController {
     
     // MARK: - IBOutlets
 
-
     /// タイムライン表示するテーブルを配置
     @IBOutlet private weak var tableView: UITableView!
     

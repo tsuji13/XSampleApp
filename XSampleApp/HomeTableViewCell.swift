@@ -19,6 +19,7 @@ final class HomeTableViewCell: UITableViewCell {
     @IBOutlet private weak var bodyLabel: UILabel!
 
         override func awakeFromNib() {
+
         super.awakeFromNib()
         // Initialization code
     }

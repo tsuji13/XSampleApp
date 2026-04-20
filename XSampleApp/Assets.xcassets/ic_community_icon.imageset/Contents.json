@@ -1,7 +1,11 @@
 {
   "images" : [
     {
+<<<<<<<< HEAD:XSampleApp/Assets.xcassets/ic_community_icon.imageset/Contents.json
       "filename" : "ic_community_icon.png",
+========
+      "filename" : "three_point_mark.png",
+>>>>>>>> 1900f84e39c022d8c9a2898dd8c20941760c7658:XSampleApp/Assets.xcassets/three_point_mark.imageset/Contents.json
       "idiom" : "universal",
       "scale" : "1x"
     },
