@@ -18,7 +18,7 @@ final class HomeTableViewCell: UITableViewCell {
     /// ポスト本文のLabel
     @IBOutlet private weak var bodyLabel: UILabel!
 
-        override func awakeFromNib() {
+    override func awakeFromNib() {
 
         super.awakeFromNib()
         // Initialization code
