@@ -56,7 +56,7 @@ final class HomeViewController: UIViewController {
 
     /// 左のバーボタンアイテムをタップした時の挙動
     @objc func didTapLeftBarButon() {
-        
+        print("Left button taped")
         
     }
 
