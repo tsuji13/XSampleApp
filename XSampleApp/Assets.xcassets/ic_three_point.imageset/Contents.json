@@ -1,8 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "ic_community_icon.png",
-
+      "filename" : "three_point_mark.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
