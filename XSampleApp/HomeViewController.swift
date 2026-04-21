@@ -29,7 +29,7 @@ final class HomeViewController: UIViewController {
     // MARK: - IBActions
 
     /// ポストボタンをタップ
-    @IBAction func postButtonTapped(_ sender: Any) {
+    @IBAction private func postButtonTapped(_ sender: Any) {
     }
     
     // MARK: - Other Methods
