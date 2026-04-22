@@ -94,14 +94,9 @@
                     </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="+">
+                    <buttonConfiguration key="configuration" style="plain" title="+" cornerStyle="capsule">
                         <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
                     </buttonConfiguration>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="20"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="postButtonTapped:" destination="-1" eventType="touchUpInside" id="qci-tL-tKd"/>
                     </connections>
