@@ -82,7 +82,7 @@
                             <constraint firstAttribute="height" constant="22" id="NCx-0x-mkU"/>
                         </constraints>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" image="three_point_mark"/>
+                        <buttonConfiguration key="configuration" style="plain" image="ic_three_point"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7Q-BZ-ypv">
                         <rect key="frame" x="127.33333333333331" y="155" width="19" height="14"/>
@@ -210,9 +210,9 @@
         <image name="ic_bookmark_mark" width="16" height="19"/>
         <image name="ic_heart_mark" width="18" height="15"/>
         <image name="ic_offcial_mark" width="5.3333334922790527" height="5"/>
-        <image name="ic_reply_mark" width="19" height="18"/>
+        <image name="ic_reply_mark" width="19" height="14"/>
         <image name="ic_repost_mark" width="19" height="14"/>
         <image name="ic_share_mark" width="16" height="17"/>
-        <image name="three_point_mark" width="27" height="22"/>
+        <image name="ic_three_point" width="27" height="22"/>
     </resources>
 </document>

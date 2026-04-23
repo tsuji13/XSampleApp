@@ -18,14 +18,40 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let scene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: scene)
+        
+        //
         let navigationController = UINavigationController(rootViewController: HomeViewController())
         
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
+         
+        let tabBarController = UITabBarController()
+        
+        let homeVC = HomeViewController()
+        let searchVC = UIViewController()
+        let communitiVC = UIViewController()
+        let notificationVC = UIViewController()
+        let messageVC = UIViewController()
+        
+        let homeNav = UINavigationController(rootViewController: homeVC)
+        let searchNav = UINavigationController(rootViewController: searchVC)
+        let communityNav = UINavigationController(rootViewController: communitiVC)
+        let notificationNav = UINavigationController(rootViewController: notificationVC)
+        let messageNav = UINavigationController(rootViewController: messageVC)
+        
+        homeNav.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "ic_home_icon"), tag: 0)
+        searchNav.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "ic_search_icon"), tag: 0)
+        communityNav.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "ic_community_icon"), tag: 0)
+        notificationNav.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "ic_notification_icon"), tag: 0)
+        messageNav.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "ic_message_icon"), tag: 0)
         
         
+        tabBarController.viewControllers = [homeNav, searchNav, communityNav, notificationNav, messageNav]
         
+        tabBarController.tabBar.backgroundColor = UIColor(hex: "#F2F2F2")
         
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
         
     }
 
