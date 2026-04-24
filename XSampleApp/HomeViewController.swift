@@ -23,6 +23,7 @@ final class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         configureNavigationBar()
+        configureTableView()
         
     }
     
@@ -64,4 +65,36 @@ final class HomeViewController: UIViewController {
         
     }
     
+    private func configureTableView(){
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        let nib = UINib(nibName: "HomeTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "Cell")
+        tableView.rowHeight = UITableView.automaticDimension
+    }
+}
+
+// MARK: UITableViewDataRsource
+
+extension HomeViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)as!HomeTableViewCell
+        
+        return cell
+        
+    }
+}
+// MARK: UITableViewDelegate
+
+extension HomeViewController: UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }
