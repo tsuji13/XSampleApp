@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Home{
+struct Home {
     
     let imageString: String
     let name: String
