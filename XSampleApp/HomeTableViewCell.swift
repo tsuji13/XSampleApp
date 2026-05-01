@@ -7,11 +7,10 @@
 
 import UIKit
 
-/// TableViewにて表示するセルをカスタムアレンジ
+/// ホーム画面のユーザーセル
 final class HomeTableViewCell: UITableViewCell {
 
     /// ユーザーアイコンのImageView
-
     @IBOutlet private weak var userImageView: UIImageView!
     /// ユーザー名のLabel
     @IBOutlet private weak var userNameLabel: UILabel!
