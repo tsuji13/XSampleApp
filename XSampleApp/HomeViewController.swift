@@ -106,7 +106,8 @@ extension HomeViewController: UITableViewDataSource {
         
     }
 }
-// MARK: UITableViewDelegate
+
+// MARK: - UITableViewDelegate
 
 extension HomeViewController: UITableViewDelegate{
     
