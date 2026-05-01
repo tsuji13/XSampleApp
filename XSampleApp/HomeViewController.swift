@@ -12,6 +12,18 @@ final class HomeViewController: UIViewController {
     
     // MARK: - Properties
     
+    let cells: [Home] = [
+        Home(imageString: "yaruki_moeru_man",
+             name: "山田太郎",
+             body: "This is the body of cell 1"),
+        Home(imageString: "otaku_girl_fashion",
+             name: "佐藤花子",
+             body: "This is the body of cell 2"),
+        Home(imageString: "suteneko_hirou_furyou",
+             name: "鈴木次郎",
+             body: "This is the body of cell 3"),
+    ]
+    
     // MARK: - IBOutlets
     
     /// タイムライン表示するテーブルを配置
@@ -23,6 +35,7 @@ final class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         configureNavigationBar()
+        configureTableView()
         
     }
     
@@ -64,4 +77,41 @@ final class HomeViewController: UIViewController {
         
     }
     
+    private func configureTableView(){
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        let nib = UINib(nibName: "HomeTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "Cell")
+        tableView.rowHeight = 100
+    }
+}
+
+// MARK: - UITableViewDataRsource
+
+extension HomeViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return cells.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",
+                                                 for: indexPath)as! HomeTableViewCell
+        cell.configure(imageString: cells[indexPath.row].imageString,
+                               name: cells[indexPath.row].name,
+                               body: cells[indexPath.row].body)
+        
+        return cell
+        
+    }
+}
+
+// MARK: - UITableViewDelegate
+
+extension HomeViewController: UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }
