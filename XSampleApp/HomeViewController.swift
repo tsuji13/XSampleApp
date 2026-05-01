@@ -87,7 +87,7 @@ final class HomeViewController: UIViewController {
     }
 }
 
-// MARK: UITableViewDataRsource
+// MARK: - UITableViewDataRsource
 
 extension HomeViewController: UITableViewDataSource {
     
