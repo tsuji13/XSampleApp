@@ -7,27 +7,20 @@
 
 import UIKit
 
-/// TableViewにて表示するセルをカスタムアレンジ
+/// ホーム画面のユーザーセル
 final class HomeTableViewCell: UITableViewCell {
 
     /// ユーザーアイコンのImageView
-
     @IBOutlet private weak var userImageView: UIImageView!
     /// ユーザー名のLabel
     @IBOutlet private weak var userNameLabel: UILabel!
     /// ポスト本文のLabel
     @IBOutlet private weak var bodyLabel: UILabel!
 
-    override func awakeFromNib() {
-
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configure(imageString: String, name: String, body: String){
+        self.userImageView.image = UIImage(named: imageString)
+        self.userNameLabel.text = name
+        self.bodyLabel.text = body
     }
     
 }
