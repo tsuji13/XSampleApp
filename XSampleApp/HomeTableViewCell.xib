@@ -161,6 +161,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="x0K-q1-t7D" firstAttribute="centerY" secondItem="XoL-m5-lM9" secondAttribute="centerY" id="05h-ov-eXx"/>
+                    <constraint firstItem="XoL-m5-lM9" firstAttribute="top" secondItem="n5Z-km-XXZ" secondAttribute="bottom" constant="24" id="3ig-Dv-1Lc"/>
                     <constraint firstItem="K7Q-BZ-ypv" firstAttribute="centerY" secondItem="XoL-m5-lM9" secondAttribute="centerY" id="8At-jR-UjT"/>
                     <constraint firstItem="x0K-q1-t7D" firstAttribute="leading" secondItem="K7Q-BZ-ypv" secondAttribute="trailing" constant="4" id="Cy8-e1-BcN"/>
                     <constraint firstItem="b6c-Wi-IUP" firstAttribute="centerY" secondItem="XoL-m5-lM9" secondAttribute="centerY" id="IFk-eX-UkN"/>
