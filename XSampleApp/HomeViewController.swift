@@ -15,13 +15,13 @@ final class HomeViewController: UIViewController {
     let cells: [Home] = [
         Home(imageString: "yaruki_moeru_man",
              name: "山田太郎",
-             body: "This is the body of cell 1"),
+             body: "This is the body of cell 1,これはセルの高さが変わるかのテストです"),
         Home(imageString: "otaku_girl_fashion",
              name: "佐藤花子",
-             body: "This is the body of cell 2"),
+             body: "This is the body of cell 2,これはセルの高さが変わるかのテストです,文章を追加するとセルの高さが変わって高くなります"),
         Home(imageString: "suteneko_hirou_furyou",
              name: "鈴木次郎",
-             body: "This is the body of cell 3"),
+             body: "This is the body of cell 3これはセルの高さが変わるかのテストです,文章を追加するとセルの高さが変わって高くなります,さらに追加するとより高くなります"),
     ]
     
     // MARK: - IBOutlets
@@ -83,7 +83,7 @@ final class HomeViewController: UIViewController {
         
         let nib = UINib(nibName: "HomeTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "Cell")
-        tableView.rowHeight = 100
+        tableView.rowHeight = UITableView.automaticDimension
     }
 }
 
